@@ -10,6 +10,7 @@
     <link rel = "stylesheet" href = "normalize.css">
     <script src="script.js" defer></script>
     <script src = "secondscript.js" defer></script>
+    <script src = "thirdscript.js" defer></script>
     
 </head>
 <body>
@@ -36,28 +37,40 @@
         <section id="about" class="section">
             <h2>About</h2>
             <p>
-                Aespa is a South Korean girl group formed by SM Entertainment. The group debuted in November 2020 and has quickly become known for their unique concept, blending virtual and real worlds through avatars, called "æ", and their powerful music.
+                Aespa is a South Korean girl group formed by SM Entertainment. The group debuted in November 2020 and has quickly become known for their unique concept, blending virtual and real worlds through avatars, called "æ", and their powerful music. They released their newest album "Whiplash" on October 21 2024.
             </p>
             <div class="members-container">
                 <div class="member">
                     <img src="images/karina.jpg" alt="Karina">
                     <h4>Karina</h4>
                     <p>Leader, Main Dancer, Lead Rapper, Sub Vocalist</p>
+                    <a href="https://www.instagram.com/katarinabluu/" target="_blank">
+                        <button>Instagram Profile</button>
+                    </a>
                 </div>
                 <div class="member">
                     <img src="images/winter.jpg" alt="Winter">
                     <h4>Winter</h4>
                     <p>Lead Vocalist, Lead Dancer</p>
+                    <a href="https://www.instagram.com/imwinter/" target="_blank">
+                        <button>Instagram Profile</button>
+                    </a>
                 </div>
                 <div class = "member">
                     <img src = "images/giselle.jpg" alt = "Giselle">
                     <h4>Giselle</h4>
                     <p>Main Rapper, Sub Vocalist, Producer</p>
+                    <a href="https://www.instagram.com/aerichandesu/" target="_blank">
+                        <button>Instagram Profile</button>
+                    </a>
                 </div>
                 <div class = "member">
                     <img src = "images/ningning.jpg" alt = "Ningning">
                     <h4>Ningning</h4>
                     <p>Main Vocalist, Sub Dancer, Sub Rapper</p>
+                    <a href="https://www.instagram.com/imnotningning/" target="_blank">
+                        <button>Instagram Profile</button>
+                    </a>
                 </div>
             </div>
         </section>
@@ -122,10 +135,6 @@
             </div>
         </section>
         
-        
-        
-        
-
         <section id="store" class="section">
         <h2>Albums</h2>
         <div class="store-row">
@@ -164,23 +173,29 @@
         </div>
         </section>
 
-
-
         <section id="contact" class="section">
             <h2>Contact Us</h2>
             <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit" class="center">Send</button>
+                <div class="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+                    <button type="submit">Send</button>
+                </div>
             </form>
-        </section>  
+        </section>
+        
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h3>Message Sent!</h3>
+                <p>Thank you for reaching out. We will get back to you soon.</p>
+                <button id="closePopup" class="close-btn">Close</button>
+            </div>
+        </div>
+        
+        
+
+        
     </main>
 
     <footer>
