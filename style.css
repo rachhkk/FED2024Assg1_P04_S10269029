@@ -1,0 +1,230 @@
+/*member intro*/
+#members{
+  padding: 50px 20px;
+  background-color: #111;
+  text-align: center;
+}
+
+.members-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.member{
+  width: 220px;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+}
+
+.member img{
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.member p{
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Set background color to black */
+  color: #fff; /* Ensure text is white for contrast */
+}
+
+header {
+  background-color: #111; /* Darker header for distinction */
+  color: #fff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/*store*/
+.store-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Ensures all items are of equal height */
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+}
+
+.item {
+  flex: 1;
+  max-width: calc(20% - 20px);
+  box-sizing: border-box;
+  border: 1px solid #111;
+  border-radius: 8px;
+  padding: 15px;
+  background: #f9f9f9;
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.item h4 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #333;
+  flex-grow: 1; 
+}
+
+.item p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.item button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.item button:hover {
+  background-color: #555;
+}
+
+
+
+/*navigation*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f90; /* Highlight effect on hover */
+}
+
+.section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #111; /* Slightly lighter section background for separation */
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adjust space between inputs */
+  max-width: 400px;
+  margin: 0 auto; /* Center the form horizontally */
+  background-color: #222; /* Form background */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  width: 100%; /* Ensure inputs stretch to fill container */
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #b53dff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: center; 
+  width: auto; 
+  margin-top: 10px; 
+}
+
+button:hover {
+  background-color: #b53dff;
+}
+
+/*pic slides*/
+.slider {
+  position: relative;
+  overflow: hidden; 
+  width: 100%; 
+  height: 300px; 
+}
+
+.slides {
+  display: flex; 
+  transition: transform 0.5s ease-in-out; 
+  width: 100%; 
+}
+
+.slides img {
+  width: auto; 
+  height: 100%;
+  object-fit: contain; 
+  max-height: 300px;
+  margin: auto;
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+

@@ -1,1 +1,146 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aespa</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Aespa</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href = "#store">Store</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <h2>About</h2>
+            <p>
+                Aespa is a South Korean girl group formed by SM Entertainment. The group debuted in November 2020 and has quickly become known for their unique concept, blending virtual and real worlds through avatars, called "æ", and their powerful music.
+            </p>
+            <div class="members-container">
+                <div class="member">
+                    <img src="karina.jpg" alt="Karina">
+                    <h4>Karina</h4>
+                    <p>Leader, Main Dancer, Lead Rapper, Sub Vocalist</p>
+                </div>
+                <div class="member">
+                    <img src="winter.jpg" alt="Winter">
+                    <h4>Winter</h4>
+                    <p>Lead Vocalist, Lead Dancer</p>
+                </div>
+                <div class = "member">
+                    <img src = "giselle.jpg" alt = "Giselle">
+                    <h4>Giselle</h4>
+                    <p>Main Rapper, Sub Vocalist, Producer</p>
+                </div>
+                <div class = "member">
+                    <img src = "ningning.jpg" alt = "Ningning">
+                    <h4>Ningning</h4>
+                    <p>Main Vocalist, Sub Dancer, Sub Rapper</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>Gallery</h2>
+            <div class="slider">
+                <div class="slides">
+                    <img src="Aespa GRP.jpg" alt="Aespa 1">
+                    <img src="Aespa GRP2.jpg" alt="Aespa 2">
+                    <img src="Aespa GRP3.jpg" alt="Aespa 3">
+                    <img src="Aespa GRP4.jpg" alt="Aespa 4">
+                    <img src = "Aespa GRP5.jpg" alt = "Aespa 5">
+                    <img src = "Aespa GRP6.jpg" alt = "Aespa 6">
+                    <img src = "Aespa GRP7.jpg" alt = "Aespa 7">
+                    <img src = "Aespa GRP8.jpg" alt = "Aespa 8">
+                    <img src = "Aespa GRP9.jpg" alt = "Aespa 9">
+                </div>
+            </div>
+            <button id="prev">❮</button>
+            <button id="next">❯</button>
+        </section>
+        
+        <section id="events" class="section">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Live at Kuala Lumpur Bukit Jalil Stadium - 25th Nov 2024</li>
+                <li>Private Wedding Performance - 5th Dec 2024</li>
+                <li>Year-End Festival - 31st Dec 2024</li>
+            </ul>
+        </section>
+
+        <!-- Store Section -->
+        <!-- Store Section -->
+        <section id="store" class="section">
+        <h2>Albums</h2>
+        <div class="store-row">
+            <div class="item">
+                 <img src="savage.jpg" alt="Savage">
+                <h4>Savage (1st Mini Album)</h4>
+                <p>S$30.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="item">
+                <img src="girls.jpg" alt="Girls">
+                <h4>Girls (2nd Mini Album)</h4>
+                <p>S$35.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="item">
+                <img src="my world.jpg" alt="My World">
+                <h4>My World (3rd Mini Album)</h4>
+                <p>S$28.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="item">
+                <img src="drama.jpg" alt="Drama">
+                <h4>Drama (4th Mini Album)</h4>
+                <p>S$33.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="item">
+                <img src="whiplash.jpg" alt="Whiplash">
+                <h4>Whiplash</h4>
+                <p>$105.00</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        </section>
+
+
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" class="center">Send</button>
+            </form>
+        </section>  
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aespa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
