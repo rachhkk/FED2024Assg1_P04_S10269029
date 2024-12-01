@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aespa</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <link rel = "stylesheet" href = "normalize.css">
     <script src="script.js" defer></script>
+    <script src = "secondscript.js" defer></script>
     
 </head>
 <body>
@@ -24,6 +26,12 @@
         </nav>
     </header>
 
+    <div class="banner">
+        <video autoplay muted loop class="banner-video">
+            <source src="videos/banner.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
     <main>
         <section id="about" class="section">
             <h2>About</h2>
@@ -32,22 +40,22 @@
             </p>
             <div class="members-container">
                 <div class="member">
-                    <img src="karina.jpg" alt="Karina">
+                    <img src="images/karina.jpg" alt="Karina">
                     <h4>Karina</h4>
                     <p>Leader, Main Dancer, Lead Rapper, Sub Vocalist</p>
                 </div>
                 <div class="member">
-                    <img src="winter.jpg" alt="Winter">
+                    <img src="images/winter.jpg" alt="Winter">
                     <h4>Winter</h4>
                     <p>Lead Vocalist, Lead Dancer</p>
                 </div>
                 <div class = "member">
-                    <img src = "giselle.jpg" alt = "Giselle">
+                    <img src = "images/giselle.jpg" alt = "Giselle">
                     <h4>Giselle</h4>
                     <p>Main Rapper, Sub Vocalist, Producer</p>
                 </div>
                 <div class = "member">
-                    <img src = "ningning.jpg" alt = "Ningning">
+                    <img src = "images/ningning.jpg" alt = "Ningning">
                     <h4>Ningning</h4>
                     <p>Main Vocalist, Sub Dancer, Sub Rapper</p>
                 </div>
@@ -58,15 +66,15 @@
             <h2>Gallery</h2>
             <div class="slider">
                 <div class="slides">
-                    <img src="Aespa GRP.jpg" alt="Aespa 1">
-                    <img src="Aespa GRP2.jpg" alt="Aespa 2">
-                    <img src="Aespa GRP3.jpg" alt="Aespa 3">
-                    <img src="Aespa GRP4.jpg" alt="Aespa 4">
-                    <img src = "Aespa GRP5.jpg" alt = "Aespa 5">
-                    <img src = "Aespa GRP6.jpg" alt = "Aespa 6">
-                    <img src = "Aespa GRP7.jpg" alt = "Aespa 7">
-                    <img src = "Aespa GRP8.jpg" alt = "Aespa 8">
-                    <img src = "Aespa GRP9.jpg" alt = "Aespa 9">
+                    <img src="images/Aespa GRP.jpg" alt="Aespa 1">
+                    <img src="images/Aespa GRP2.jpg" alt="Aespa 2">
+                    <img src="images/Aespa GRP3.jpg" alt="Aespa 3">
+                    <img src="images/Aespa GRP4.jpg" alt="Aespa 4">
+                    <img src = "images/Aespa GRP5.jpg" alt = "Aespa 5">
+                    <img src = "images/Aespa GRP6.jpg" alt = "Aespa 6">
+                    <img src = "images/Aespa GRP7.jpg" alt = "Aespa 7">
+                    <img src = "images/Aespa GRP8.jpg" alt = "Aespa 8">
+                    <img src = "images/Aespa GRP9.jpg" alt = "Aespa 9">
                 </div>
             </div>
             <button id="prev">❮</button>
@@ -75,47 +83,83 @@
         
         <section id="events" class="section">
             <h2>Upcoming Events</h2>
-            <ul>
-                <li>Live at Kuala Lumpur Bukit Jalil Stadium - 25th Nov 2024</li>
-                <li>Private Wedding Performance - 5th Dec 2024</li>
-                <li>Year-End Festival - 31st Dec 2024</li>
-            </ul>
+            <div class="events-container">
+                <div class="event-card">
+                    <img src="images/event kl.jpg" alt="Kuala Lumpur Event" class="event-img">
+                    <h3>Live at Kuala Lumpur Bukit Jalil Stadium</h3>
+                    <p class="event-date">25th Jan 2025</p>
+                    <p class="event-location">Kuala Lumpur, Malaysia</p>
+                    <p class="event-description">Join us for an unforgettable live performance at one of the biggest stadiums in Asia!</p>
+                    <p class="countdown" id="countdown1">Event starts in: <span id="timer1"></span></p>
+                    <button class="event-btn">Get Tickets</button>
+                </div>
+        
+                <div class="event-card">
+                    <img src="images/wedding.jpg" alt="Wedding Performance" class="event-img">
+                    <h3>Private Wedding Performance</h3>
+                    <p class="event-date">5th Dec 2024</p>
+                    <p class="event-location">Private Event</p>
+                    <p class="event-description">A special intimate performance at a luxury wedding event. Invitation only!</p>
+                    <p class="countdown" id="countdown2">Event starts in: <span id="timer2"></span></p>
+                    <button class="event-btn">Learn More</button>
+                </div>
+        
+                <div class="event-card">
+                    <img src="images/firework.jpg" alt="Year-End Festival" class="event-img">
+                    <h3>Year-End Festival</h3>
+                    <p class="event-date">31st Dec 2024</p>
+                    <p class="event-location">Global Event</p>
+                    <p class="event-description">Celebrate the new year with Aespa in a spectacular year-end festival.</p>
+                    <p class="countdown" id="countdown3">Event starts in: <span id="timer3"></span></p>
+                    <button class="event-btn">RSVP Now</button>
+                </div>
+        
+                <div class="event-card coming-soon">
+                    <h3>Coming Soon</h3>
+                    <p>Stay tuned for exciting upcoming events!</p>
+                    <button class="event-btn">Learn More</button>
+                </div>
+            </div>
         </section>
+        
+        
+        
+        
 
-        <!-- Store Section -->
-        <!-- Store Section -->
         <section id="store" class="section">
         <h2>Albums</h2>
         <div class="store-row">
             <div class="item">
-                 <img src="savage.jpg" alt="Savage">
+                 <img src="images/savage.jpg" alt="Savage">
                 <h4>Savage (1st Mini Album)</h4>
                 <p>S$30.00</p>
                 <button>Buy Now</button>
             </div>
             <div class="item">
-                <img src="girls.jpg" alt="Girls">
+                <img src="images/girls.jpg" alt="Girls">
                 <h4>Girls (2nd Mini Album)</h4>
                 <p>S$35.00</p>
                 <button>Buy Now</button>
             </div>
             <div class="item">
-                <img src="my world.jpg" alt="My World">
+                <img src="images/my world.jpg" alt="My World">
                 <h4>My World (3rd Mini Album)</h4>
                 <p>S$28.00</p>
                 <button>Buy Now</button>
             </div>
             <div class="item">
-                <img src="drama.jpg" alt="Drama">
+                <img src="images/drama.jpg" alt="Drama">
                 <h4>Drama (4th Mini Album)</h4>
                 <p>S$33.00</p>
                 <button>Buy Now</button>
             </div>
             <div class="item">
-                <img src="whiplash.jpg" alt="Whiplash">
+                <img src="images/whiplash.jpg" alt="Whiplash">
                 <h4>Whiplash</h4>
                 <p>$105.00</p>
+                <a href = "https://global.shop.smtown.com/products/the-5th-mini-album-whiplash-beat-ver" target = "_blank">
                 <button>Buy Now</button>
+                </a>
             </div>
         </div>
         </section>
